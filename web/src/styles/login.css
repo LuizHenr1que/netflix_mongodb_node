@@ -1,0 +1,76 @@
+#caixa_login {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    max-width: 29rem;
+    z-index: 2;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*form input*/
+
+.inputField input {
+    border: none;
+    font-size: 14px;
+    padding: 27px;
+}
+
+.inputField {
+    position: relative;
+  }
+
+  
+  .inputField label {
+    pointer-events: none;
+    color: #8c8c8c;
+    position: absolute;
+    padding-left: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: text;
+  }
+  
+  .inputField input:focus+label,
+  .inputField input:not(:placeholder-shown)+label {
+    top: 10px;
+    left: 5px;
+    font-size: 13px;
+  }
+  
+  .inputField input,
+  .inputField label {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+  
+@media (max-width: 740px) { 
+    .container-login {
+        background: rgba(0, 0, 0, 0.7);
+        width: 100% !important;
+        justify-content: flex-start;
+        
+    }
+    #caixa_login {
+        max-width: 100%;
+        padding: 0px 30px;
+    }
+ }
